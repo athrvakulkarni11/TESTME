@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Create Quiz</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='quiz.css') }}">
+</head>
+<body>
+  <h1>Create Quiz</h1>
+
+  <div id="quiz-container">
+    <h2>Add Question</h2>
+    <input type="text" id="question-input" placeholder="Enter the question">
+    <input type="text" id="options-input" placeholder="Enter the options (comma-separated)">
+    <input type="text" id="answer-input" placeholder="Enter the answer (index starting with 0)">
+    <button id="add-question-btn">Add Question</button>
+    <button id="generate-quiz-btn">Generate Quiz</button>
+  </div>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
